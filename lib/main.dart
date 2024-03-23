@@ -4,6 +4,24 @@ void main() {
   runApp(const MyApp());
 }
 
+class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const MyAppBar({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      title: const Text(
+        'Flutter Tutorial',
+        style: TextStyle(color: Colors.white),
+      ),
+      backgroundColor: Colors.blue,
+    );
+  }
+
+  @override
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -11,13 +29,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            'Flutter Tutorial',
-            style: TextStyle(color: Colors.white),
-          ),
-          backgroundColor: Colors.blue,
-        ),
+        appBar: const MyAppBar(),
         body: Container(
           alignment: Alignment.center,
           child: Image.asset(
