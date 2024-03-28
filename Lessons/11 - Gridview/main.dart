@@ -50,6 +50,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: const MyAppBar(),
         body: Container(
+          padding: const EdgeInsets.all(10),
           child: GridView.builder(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3,

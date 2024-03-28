@@ -1,7 +1,9 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -23,7 +25,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {

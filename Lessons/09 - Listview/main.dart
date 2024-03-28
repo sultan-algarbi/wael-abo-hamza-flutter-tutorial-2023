@@ -50,6 +50,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: const MyAppBar(),
         body: Container(
+          padding: const EdgeInsets.all(10),
           height: 400,
           // child: ListView(
           //   children: [

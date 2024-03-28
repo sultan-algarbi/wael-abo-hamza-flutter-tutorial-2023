@@ -50,6 +50,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: const MyAppBar(),
         body: Container(
+          padding: const EdgeInsets.all(10),
           child: ListView.separated(
             separatorBuilder: (context, index) => const Divider(),
             itemCount: employee.length,

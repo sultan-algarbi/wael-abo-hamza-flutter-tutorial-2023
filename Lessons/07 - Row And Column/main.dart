@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: const MyAppBar(),
         body: Container(
+          padding: const EdgeInsets.all(10),
           width: 500,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
