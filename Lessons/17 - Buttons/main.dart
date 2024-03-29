@@ -27,17 +27,6 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  BoxDecoration myBoxDecoration() {
-    return BoxDecoration(
-      color: const Color(0xffe6f0fa),
-      borderRadius: BorderRadius.circular(5),
-      border: Border.all(
-        color: Colors.black,
-        width: 2,
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

@@ -74,15 +74,4 @@ class _MyAppState extends State<MyApp> {
       backgroundColor: Colors.blue,
     );
   }
-
-  BoxDecoration myBoxDecoration() {
-    return BoxDecoration(
-      color: const Color(0xffe6f0fa),
-      borderRadius: BorderRadius.circular(5),
-      border: Border.all(
-        color: Colors.black,
-        width: 2,
-      ),
-    );
-  }
 }
