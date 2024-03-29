@@ -76,39 +76,7 @@ class _MyAppState extends State<MyApp> {
   PreferredSizeWidget myAppBar() {
     return AppBar(
       title: const Text('Flutter Tutorial'),
-      centerTitle: true,
-      titleTextStyle: const TextStyle(
-        color: Colors.yellow,
-        fontSize: 20,
-        fontWeight: FontWeight.bold,
-      ),
       backgroundColor: Colors.blue,
-      elevation: 20.0,
-      actions: [
-        IconButton(
-          icon: const Icon(Icons.search),
-          onPressed: () {
-            print('Search button clicked');
-          },
-        ),
-        IconButton(
-          icon: const Icon(Icons.notifications),
-          onPressed: () {
-            print('Notification button clicked');
-          },
-        ),
-      ],
-    );
-  }
-
-  BoxDecoration myBoxDecoration() {
-    return BoxDecoration(
-      color: const Color(0xffe6f0fa),
-      borderRadius: BorderRadius.circular(5),
-      border: Border.all(
-        color: Colors.black,
-        width: 2,
-      ),
     );
   }
 }
