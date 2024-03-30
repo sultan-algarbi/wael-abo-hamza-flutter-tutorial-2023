@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class AboutUs extends StatefulWidget {
-  const AboutUs({super.key});
+class ContactUs extends StatefulWidget {
+  const ContactUs({super.key});
 
   @override
-  State<AboutUs> createState() => _AboutUsState();
+  State<ContactUs> createState() => _ContactUsState();
 }
 
-class _AboutUsState extends State<AboutUs> {
+class _ContactUsState extends State<ContactUs> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('About Us'),
+        title: const Text('Contact Us'),
         backgroundColor: Colors.blue,
         titleTextStyle: const TextStyle(
           color: Colors.white,
@@ -25,7 +25,7 @@ class _AboutUsState extends State<AboutUs> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text('About Us', style: TextStyle(fontSize: 40)),
+            const Text('Contact Us', style: TextStyle(fontSize: 40)),
             const SizedBox(height: 60),
             // ---------------------- Push ----------------------
             MaterialButton(
@@ -38,11 +38,11 @@ class _AboutUsState extends State<AboutUs> {
             ),
             MaterialButton(
               onPressed: () {
-                Navigator.of(context).pushNamed('contactus');
+                Navigator.of(context).pushNamed('aboutus');
               },
               color: Colors.blue,
               textColor: Colors.white,
-              child: const Text('Contact Us (Push)'),
+              child: const Text('About Us (Push)'),
             ),
             // ---------------------- Push Replacement ----------------------
             MaterialButton(
@@ -55,11 +55,11 @@ class _AboutUsState extends State<AboutUs> {
             ),
             MaterialButton(
               onPressed: () {
-                Navigator.of(context).pushReplacementNamed('contactus');
+                Navigator.of(context).pushReplacementNamed('aboutus');
               },
               color: Colors.green,
               textColor: Colors.white,
-              child: const Text('Contact Us (Push Replacement)'),
+              child: const Text('About Us (Push Replacement)'),
             ),
             // ---------------------- Push & Remove ----------------------
             if (Navigator.canPop(context))
@@ -78,13 +78,13 @@ class _AboutUsState extends State<AboutUs> {
               MaterialButton(
                 onPressed: () {
                   Navigator.of(context).pushNamedAndRemoveUntil(
-                    'contactus',
+                    'aboutus',
                     (route) => false,
                   );
                 },
                 color: Colors.red,
                 textColor: Colors.white,
-                child: const Text('Contact Us (Push & Remove)'),
+                child: const Text('About Us (Push & Remove)'),
               ),
             // ---------------------- Pop ----------------------
             if (Navigator.canPop(context))
