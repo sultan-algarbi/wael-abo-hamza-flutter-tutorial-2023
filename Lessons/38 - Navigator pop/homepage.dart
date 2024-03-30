@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:wael_abo_hamza_tutorial/homepage.dart';
+import 'package:wael_abo_hamza_tutorial/aboutus.dart';
 
-class AboutUs extends StatefulWidget {
-  const AboutUs({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  State<AboutUs> createState() => _AboutUsState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _AboutUsState extends State<AboutUs> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('About Us'),
+        title: const Text('Home'),
         backgroundColor: Colors.blue,
         titleTextStyle: const TextStyle(
           color: Colors.white,
@@ -25,40 +25,31 @@ class _AboutUsState extends State<AboutUs> {
         padding: const EdgeInsets.all(10),
         child: Column(
           children: [
-            const Text('About Us Page'),
+            const Text('Home Page'),
             MaterialButton(
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => const HomePage(),
+                    builder: (context) => const AboutUs(),
                   ),
                 );
               },
               color: Colors.blue,
               textColor: Colors.white,
-              child: const Text('-> Home (Push)'),
+              child: const Text('-> About Us (Push)'),
             ),
             MaterialButton(
               onPressed: () {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: (context) => const HomePage(),
+                    builder: (context) => const AboutUs(),
                   ),
                 );
               },
               color: Colors.blue,
               textColor: Colors.white,
-              child: const Text('-> Home (PushReplacement)'),
+              child: const Text('-> About Us (PushReplacement)'),
             ),
-            if (Navigator.canPop(context))
-              MaterialButton(
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-                color: Colors.blue,
-                textColor: Colors.white,
-                child: const Text('<- Back (pop)'),
-              ),
           ],
         ),
       ),
