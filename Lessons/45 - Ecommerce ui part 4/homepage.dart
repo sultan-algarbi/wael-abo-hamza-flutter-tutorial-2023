@@ -44,6 +44,8 @@ class _HomePageState extends State<HomePage> {
           'دليل يساعد الشركات على إعمال خيالها بحثاً عن طرق جديدة قوية لتحقيق النجاح',
       price: 1000,
       image: 'assets/books/01.png',
+      author: 'مارتن ريفز',
+      category: 'التنمية البشرية',
     ),
     Book(
       title: 'التحفيز الاستراتيجي',
@@ -51,6 +53,8 @@ class _HomePageState extends State<HomePage> {
           'اكتشف كيف يمكن للتحفيز الفعال دعم أهدافك وتحفيزك نحو النجاح في الحياة والعمل',
       price: 200,
       image: 'assets/books/02.png',
+      author: 'ربيع أبو شقرا',
+      category: 'الإدارة',
     ),
     Book(
       title: 'ابتكر وانطلق',
@@ -58,6 +62,8 @@ class _HomePageState extends State<HomePage> {
           'اطلق العنان لإبداعك وتخيل الحلول الجديدة مع استراتيجيات ملهمة للإبداع والتفوق في المجالات المختلفة',
       price: 500,
       image: 'assets/books/03.png',
+      author: 'جيف بيزوس',
+      category: 'التسويق',
     ),
     Book(
       title: 'قم بقياس المهام',
@@ -65,6 +71,8 @@ class _HomePageState extends State<HomePage> {
           'تعلم كيفية تحديد وقياس الأهداف بفعالية لتحسين الأداء الشخصي والمهني',
       price: 300,
       image: 'assets/books/04.png',
+      author: 'جون دوير',
+      category: 'التطوير الشخصي',
     ),
     Book(
       title: 'التنافس في عصر الذكاء الاصنطاعي',
@@ -72,6 +80,8 @@ class _HomePageState extends State<HomePage> {
           'استعد لتحديات المستقبل مع فهم أساسيات التنافسية في زمن التطور التكنولوجي والذكاء الاصطناعي',
       price: 400,
       image: 'assets/books/05.png',
+      author: 'كريم لاخاني',
+      category: 'التكنولوجيا',
     ),
   ];
 
